@@ -1,0 +1,240 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+body {
+  background: #0f0f0f;
+  color: #8b95a0;
+}
+
+header {
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  background: #161415 url(broken_glass_3-wallpaper-1600x900.jpg);
+  background-position: 0% 40%;
+  background-size: cover;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+  padding: 20px 10px;
+  margin: 0 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+ul#nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+ul#nav li.current a {
+  color: #f06000;
+}
+
+#nav-wrap ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+li {
+  line-height: 18px;
+}
+
+#nav-wrap {
+  font: 12px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header-text {
+  position: relative;
+  top: 300px;
+  text-align: center;
+  width: 85%;
+  margin: auto;
+}
+
+.header-text h1 {
+  font-size: 90px;
+  color: #ffffff;
+  font-family: "opensans-bold", sans-serif;
+}
+
+.header-text p {
+  font-size: 22px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-link a {
+  color: #ffffff;
+}
+
+header .header-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #2f2d2e;
+  border-color: rgba(150, 150, 150, 0.3);
+}
+
+hr {
+  border: solid #e3e3e3;
+  border-width: 3px 0 0;
+  clear: both;
+  margin: 11px 0 30px;
+  height: 0;
+}
+
+.social {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.social li {
+  display: inline-block;
+  font-size: 35px;
+  padding: 5px 20px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.scrolldown {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  font-size: 50px;
+  text-align: center;
+}
+.scrolldown a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.scrolldown a:hover {
+  opacity: 0.9;
+}
