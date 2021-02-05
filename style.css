@@ -96,6 +96,10 @@ video {
   display: inline-block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0f0f0f;
   color: #8b95a0;
@@ -119,7 +123,10 @@ ul#nav li {
   list-style: none;
   height: 48px;
   display: inline-block;
-  padding: 20px 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
   margin: 0 5px;
   font-size: 12px;
   font-weight: bold;
@@ -133,7 +140,13 @@ ul#nav li a {
 
 ul#nav li a:active {
   background-color: transparent !important;
+  color: #f06000;
 }
+
+ul#nav li a:hover {
+  opacity: 0.7;
+}
+
 ul#nav li.current a {
   color: #f06000;
 }
@@ -191,6 +204,10 @@ a {
   color: #ffffff;
 }
 
+.header-link a:hover {
+  opacity: 0.6;
+}
+
 header .header-text hr {
   width: 60%;
   margin: 18px auto 24px auto;
@@ -217,6 +234,10 @@ hr {
   padding: 5px 20px;
 }
 
+.social li:hover {
+  opacity: 0.7;
+}
+
 .social a {
   text-decoration: none;
   color: #ffffff;
@@ -227,7 +248,7 @@ hr {
   bottom: 3%;
   left: 50%;
   font-size: 50px;
-  text-align: center;
+  margin: auto;
 }
 .scrolldown a {
   color: #ffffff;
@@ -237,4 +258,311 @@ hr {
 
 .scrolldown a:hover {
   opacity: 0.9;
+}
+
+#about {
+  background: #2b2b2b;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: minmax(fit-content, auto);
+}
+
+.profile-pic {
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.about-header {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: opensans-bold, sans-serif;
+}
+
+.about-info {
+  line-height: 30px;
+  padding: 0 0 30px 0;
+  color: #7a7a7a;
+}
+
+.about-bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.address h2 {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: opensans-bold, sans-serif;
+}
+
+.address p {
+  line-height: 30px;
+  /* padding: 0 0 30px 0; */
+  color: #7a7a7a;
+}
+
+.download-section {
+  padding: 30px 10px;
+}
+
+.download-section a {
+  display: inline-block;
+  border: none;
+  background-color: #444444;
+  padding: 12px 20px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "opensans-bold", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.download-section a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 240px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: -10%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+#resume {
+  background-color: #ffffff;
+  color: #838c95;
+  padding-top: 90px;
+}
+
+.resume-item {
+  padding-bottom: 24px;
+  text-align: start;
+}
+
+.resume-item .wrapper {
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.resume-item:last-child .wrapper {
+  border-bottom: none;
+}
+
+.resume-title h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-top: 9px;
+}
+
+.resume-title span {
+  border-bottom: solid 3px #11abb0;
+  padding-bottom: 6px;
+  padding: 9px 2px 2px 0;
+}
+
+.resume-detail {
+  margin-bottom: 48px;
+}
+
+.resume-detail ul {
+  list-style-type: none;
+}
+
+.resume-detail-li {
+  padding-top: 54px;
+}
+
+.work-place {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.work-designation {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  line-height: 24px;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+
+.date {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+table td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #838c95;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.bars {
+  width: 95%;
+  margin-top: 60px;
+  float: left;
+  padding: 0;
+  text-align: left;
+}
+
+.bars .skills {
+  margin-top: 36px;
+  list-style: none;
+}
+
+.bars li {
+  position: relative;
+  margin-bottom: 60px;
+  background: #ccc;
+  height: 42px;
+  border-radius: 3px;
+}
+
+.bars li em {
+  font: 15px "opensans-bold", sans-serif;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  top: -36px;
+}
+
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding-right: 24px;
+  background: #313131;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 3px 0 0 3px;
+}
+
+.cpp {
+  width: 85%;
+  animation: cpp 2s ease;
+  -moz-animation: cpp 2s ease;
+  -webkit-animation: cpp 2s ease;
+}
+
+.python {
+  width: 74%;
+  animation: python 2s ease;
+  -moz-animation: python 2s ease;
+  -webkit-animation: python 2s ease;
+}
+
+.problem-solving {
+  width: 78%;
+  animation: problem-solving 2s ease;
+  -moz-animation: problem-solving 2s ease;
+  -webkit-animation: problem-solving 2s ease;
+}
+
+.django {
+  width: 72%;
+  animation: django 2s ease;
+  -moz-animation: django 2s ease;
+  -webkit-animation: django 2s ease;
+}
+
+.html5 {
+  width: 90%;
+  animation: html5 2s ease;
+  -moz-animation: html5 2s ease;
+  -webkit-animation: html5 2s ease;
+}
+
+.css {
+  width: 80%;
+  animation: css 2s ease;
+  -moz-animation: css 2s ease;
+  -webkit-animation: css 2s ease;
+}
+
+.jquery {
+  width: 60%;
+  animation: jquery 2s ease;
+  -moz-animation: jquery 2s ease;
+  -webkit-animation: jquery 2s ease;
 }
