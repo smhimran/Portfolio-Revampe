@@ -492,7 +492,7 @@ tr:hover {
   margin-bottom: 60px;
   background: #ccc;
   height: 42px;
-  border-radius: 3px;
+  border-radius: 25px;
 }
 
 .bars li em {
@@ -515,7 +515,7 @@ tr:hover {
   display: inline-block;
   height: 42px;
   line-height: 42px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 25px 25px 25px 25px;
 }
 
 .cpp {
@@ -565,4 +565,95 @@ tr:hover {
   animation: jquery 2s ease;
   -moz-animation: jquery 2s ease;
   -webkit-animation: jquery 2s ease;
+}
+
+#projects {
+  background-color: #ebeeee;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+#projects h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #444444;
+}
+
+#projects .wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(fit-content, auto);
+  grid-column-gap: 5px;
+}
+
+.single-project {
+  position: relative;
+  width: 215px;
+  height: fit-content;
+  background: #ffffff;
+  display: inline-block;
+  margin: auto;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.single-project a {
+  text-decoration: none;
+}
+
+.single-project img {
+  height: 215px;
+  width: 215px;
+  box-shadow: 2px 0 4px grey;
+  object-fit: cover;
+}
+
+.project-title h3 {
+  color: #444444;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-img {
+  background: #ffffff;
+  height: 214px;
+}
+
+.project-banner {
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  padding: 15px 15px;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 215px;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-icon {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-img:hover .project-overlay {
+  opacity: 1;
 }
