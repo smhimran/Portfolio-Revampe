@@ -56,11 +56,14 @@ $(document).ready(function () {
 function sendmail() {
   let subject = $("#subject").val();
   let body = $("#message").val();
-  let name = $("#Name").val();
+  let name = $("#name").val();
 
-  body += `
-  Regards,
-  ${name}`;
+  console.log(name, body, subject);
 
-  window.open(`mailto:smhimran@gmail.com?subject=${subject}&body=${body}`);
+  body = `${body}<br>Regards<br>` + name;
+
+  setTimeout(
+    window.open(`mailto:smhimran@gmail.com?subject=${subject}&body=${body}`),
+    100000
+  );
 }

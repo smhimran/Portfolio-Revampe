@@ -805,3 +805,68 @@ tr:hover {
   background-color: #ebeeee;
   color: #212121;
 }
+
+footer {
+  position: relative;
+  padding-top: 48px;
+  margin-bottom: 48px;
+  background-color: #0f0f0f;
+  color: #303030;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.to-top {
+  position: absolute;
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #525252;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  font-size: 27px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.to-top:hover {
+  background-color: #36abb0;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+}
+
+.container .social a {
+  color: #626262;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .social li:hover {
+  opacity: 1;
+}
+
+.container .social a:hover {
+  color: #ffffff;
+}
+
+#credit {
+  color: #626262;
+  font-weight: bold;
+}
