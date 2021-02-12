@@ -1,7 +1,9 @@
 $(document).ready(function () {
   let modified = document.lastModified;
+  let pageLocation = location.href;
   console.log(modified);
   $("#modification").html(`Last Modified: ${modified}`);
+  $("#location").html(`Page Location: ${pageLocation}`);
 
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
